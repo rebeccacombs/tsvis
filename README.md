@@ -1,5 +1,5 @@
-# TSP
-Web Visualizer of Solutions for Travelling Salesman Problem (Dynamic Programming, Backtracking and Genetic Algorithm)
+#  TSVis
+Visualizer of Algorithsm for solving the Travelling Salesman Problem (Dynamic Programming, Backtracking and Genetic Algorithm)
 
 [http://rebeccacombs.org/tsvis/](http://rebeccacombs.org/tsvis/)
 
