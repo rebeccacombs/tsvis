@@ -1,4 +1,4 @@
-function  GeneticAlgorithm(cities = [], limit = 500){
+function  GeneticAlgorithm(cities = [], limit = Infinity){
   Algorithm.call(this);
   this.name = "Genetic Algorithm";
   this.limit = limit;
@@ -42,7 +42,7 @@ function  GeneticAlgorithm(cities = [], limit = 500){
   }
 
   this.done = function(){
-    return this.iterations >= this.limit;
+    return (this.iterations >= this.limit);
   }
 
   this.get_next_generation = function(){
@@ -132,7 +132,7 @@ function  GeneticAlgorithm(cities = [], limit = 500){
     var sum = 0;
     var best_distance_nw = Infinity;
     for(var i = 0; i < this.population.length; ++i){
-      var d = this.calc_distance(this.population[i])*10;
+      var d = this.calc_distance(this.population[i]);
       if(d < this.best_distance){
         this.best_distance = Math.round(d*10)/10;
         this.best_path = this.population[i].slice();
